@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&family=Luckiest+Guy&family=Nabla&family=Slackey&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Poke Clicker</title>
 </head>
@@ -17,17 +20,46 @@
                 <h2 class="score"></h2>
             </div>
             <div class="clickerZone">
-                <img src="assets/pokeball.png" alt="" height="200px" width="200px">
+                <button class="clickerButton" onclick="window.location.href='#';">
+                    <img class="imgClicker" src="assets/buisson.png" alt="">
+                </button>
             </div>
         </section>
         <section class="shop">
             <h1 class="titleShop">Boutique</h1>
             <ul class="menu">
-                <li>Superball</li>
-                <li>Hyperball</li>
-                <li>Masterball</li>
-                <li>Honorball</li>
+                <li>
+                    <a href="">
+                        <img src="assets/pokeball.png" alt="" class="imgShop">
+                        Pokeball
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="assets/superball.png" alt="" class="imgShop">
+                        Superball
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="assets/hyperball.png" alt="" class="imgShop">
+                        Hyperball
+                    </a>        
+                </li>
+                <li>
+                    <a href="">
+                        <img src="assets/masterball.png" alt="" class="imgShop">
+                        Masterball
+                    </a>   
+                </li>
+                <li>
+                    <a href="">
+                        <img src="assets/honorball.png" alt="" class="imgShop">
+                        Honorball
+                    </a>
+                </li>
             </ul>
+            <h1 class="titleShop">Bonus</h1>
         </section>
     </main>
     <footer></footer>
