@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+main{
+    display: flex;
+    border: 10px solid;
+}
+
+/**** titre, texte, polices etc... ****/
+h1{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/**** en-tête et titre ****/
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-image:url(assets/ciel.jpg);
+}
+
+/**** section shop ****/
+.shop{
+    background-color: RGB(255, 51, 51);
+    width: 20%;
+    border: 10px solid;
+}
+
+.titleShop{
+    height: 60px;
+    background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1), rgba(255,255,255,0));
+}
+
+/**** section game ****/
+.game{
+    width: 80%;
+    border: 10px solid;
+}
+
+.clickerZone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannerLevel{
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    background: linear-gradient(rgba(255,51,51,0), rgba(255,51,51,1), rgba(255,51,51,0));
+}
