@@ -21,7 +21,9 @@ body {
     border: 1px solid #ccc;
     cursor: pointer;
 }
-
+figure {
+  margin: 0;
+}
 .element:hover, .bonus:hover {
     background-color: #f0f0f0;
 }
