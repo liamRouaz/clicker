@@ -31,3 +31,6 @@ setInterval(() => {
 // Initial display update
 updateDisplay();
 
+
+
+
