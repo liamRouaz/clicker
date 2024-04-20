@@ -1,91 +1,140 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-main{
-    display: flex;
-    border: 10px solid;
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url(./assets/ciel.jpg);
+}
+#essenceDisplay {
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
-/**** titre, texte, polices etc... ****/
-h1{
+#alchemyButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+
+.element,
+.bonus {
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+
+figure {
+    margin: 0;
+}
+
+
+.element:hover,
+.bonus:hover {
+    background-color: #f0f0f0;
+}
+
+main {
+    display: flex;
+    border: 10px solid;
+    background-image: url(./assets/bgdex.png);
+}
+
+h1 {
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
     font-family: "Honk", system-ui;
-    color: #FFCD00;
+    color: #ffcd00;
 }
 
-a{
+a {
     text-decoration: none;
-    color: #356ABC;
+    color: #356abc;
 }
 
-/**** en-tête et titre ****/
-header{
+header {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background-image:url(assets/ciel.jpg);
+    background-image: url(./assets/ciel.jpg);
 }
 
-/**** section shop ****/
-.shop{
-    background-color: RGB(255, 51, 51);
+.shop {
+    background-color: rgba(150, 144, 144, 0.976);
     width: 20%;
     border: 10px solid;
 }
 
-.titleShop{
+.titleShop {
     height: 60px;
-    background: linear-gradient(rgba(255,255,255,0), #356ABC, rgba(255,255,255,0));
+    background: linear-gradient(rgba(255, 255, 255, 0), #356abc, rgba(255, 255, 255, 0));
 }
 
-li{
+li {
     font-family: "Luckiest Guy", cursive;
     padding-bottom: 5px;
 }
 
-.imgShop{
+.imgShop {
     height: 20px;
     width: 20px;
 }
 
-/**** section game ****/
-.game{
+.game {
     height: 460px;
     width: 80%;
     border: 10px solid;
-    background-image: url(assets/lvl1.png);
+    background-image: url(./assets/lvl1.png);
     background-size: cover;
 }
 
-.clickerZone{
+.clickerZone {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.bannerLevel{
+
+.bannerLevel {
     display: flex;
     justify-content: center;
     height: 60px;
-    background: linear-gradient(rgba(255,51,51,0), #356ABC, rgba(255,51,51,0));
+    background: linear-gradient(rgba(255, 51, 51, 0), #356abc, rgba(255, 51, 51, 0));
 }
 
-.imgClicker{
+
+.imgClicker {
     height: 200px;
     width: 200px;
     margin-top: 80px;
 }
 
 .clickerButton {
-    border: none; /* Supprime la bordure du bouton */
-    background: none; /* Supprime l'arrière-plan du bouton */
-    padding: 0; /* Supprime le remplissage */
-    cursor: pointer; /* Change le curseur pour indiquer qu'il s'agit d'un élément cliquable */
+    border: none; 
+    background: none; 
+    padding: 0; 
+    cursor: pointer; 
 }
 
+/* Définition de l'animation pour la vibration */
+@keyframes vibration {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+/* Application de l'animation à l'image lorsqu'elle possède la classe 'vibration' */
+.vibration {
+    animation: vibration 0.5s ease-in-out;
+}

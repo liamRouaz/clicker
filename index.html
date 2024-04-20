@@ -1,4 +1,137 @@
 <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&family=Luckiest+Guy&family=Nabla&family=Slackey&display=swap" rel="stylesheet">
+    <link href="output.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css"> 
+    <title>Poke Clicker</title>
+</head>
+<body >
+    <header class="flex justify-center items-center py-8">
+        <img src="./assets/titre.png" alt="" class="h-24 w-auto">
+        <figure style="display: none;">
+            <figcaption>Listen to the T-Rex:</figcaption>
+            <audio autoplay controls="false" src="./assets/Chill & Relaxing Pokémon Music Mix.mp3"></audio>
+        </figure>
+          
+    </header>
+    <main class="container mx-auto px-4">
+        <section class="game bg-white rounded-lg shadow-md p-6 mb-8">
+            <div class="bannerLevel">
+                <h1 class="text-2xl font-bold">Forêt du Bourg Palette niveau 1</h1>
+                <h2 class="score"></h2>
+                <div id="essenceDisplay">point: </div>
+                <button onclick="vibrerImage()"><img id="buisson" onclick="clickAlchemy()" class="imgClicker" src="./assets/buisson.png" alt=""></button> 
+                <div id="elementsContainer"></div>
+            </div>
+        </section>
+        <section class="shop bg-white rounded-lg shadow-md p-6">
+            <h1 class="titleShop text-2xl font-bold mb-4">Boutique</h1>
+            <ul class="menu">
+                <li><button>
+                    <img id="pokeball" src="assets/pokeball.png" alt="Pokeball" class="w-20 h-20">
+                    Pokeball
+                </button></li>
+                <li> <button >
+                    <img id="honorball" src="./assets/honorball.png" alt="HonorBall" class="w-20 h-20">
+                    Honorball
+                </button></li>
+                <li> <button class="w-12 h-12 flex items-center justify-center">
+                    <img id="superball" src="./assets/superball.png" alt="SuperBall" class="w-20 h-20">
+                    Superball
+                </button></li>
+                <li><button class="w-12 h-12 flex items-center justify-center">
+                    <img id="hyperball" src="./assets/hyperball.png" alt="HyperBall" class="w-20 h-20">
+                    Hyperball
+                </button></li>
+                <li><button class="w-12 h-12 flex items-center justify-center">
+                    <img id="masterball" src="./assets/masterball.png" alt="MasterBall" class="w-20 h-20">
+                    Masterball
+                </button></li>
+            </ul>
+        </section>
+        <section class="shop bg-white rounded-lg shadow-md p-6"> 
+            <h1 class="titleShop text-2xl font-bold mb-4">Bonus</h1>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script> 
+    <script src="bonus.js"></script>
+</body>
+</html>
+
+<!--<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&family=Luckiest+Guy&family=Nabla&family=Slackey&display=swap" rel="stylesheet">
+    <link href="output.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css"> 
+    <title>Poke Clicker</title>
+</head>
+<body >
+    <header class="flex justify-center items-center py-8">
+        <img src="./assets/titre.png" alt="" class="h-24 w-auto">
+        <figure style="display: none;">
+            <figcaption>Listen to the T-Rex:</figcaption>
+            <audio autoplay controls="false" src="./assets/Chill & Relaxing Pokémon Music Mix.mp3"></audio>
+        </figure>
+          
+    </header>
+    <main class="container mx-auto px-4">
+        <section class="game bg-white rounded-lg shadow-md p-6 mb-8">
+            <div class="bannerLevel">
+                <h1 class="text-2xl font-bold">Forêt du Bourg Palette niveau 1</h1>
+                <h2 class="score"></h2>
+                <div id="essenceDisplay">point: </div>
+                <button onclick="vibrerImage()"><img class="imgClicker" src="./assets/buisson.png" alt="" button id="alchemyButton" onclick="clickAlchemy()" onclick="vibrerImage()"></button> 
+                <div id="elementsContainer"></div>
+            </div>
+        </section>
+        <section class="shop bg-white rounded-lg shadow-md p-6">
+            <h1 class="titleShop text-2xl font-bold mb-4">Boutique</h1>
+            <ul class="menu">
+                <li><button>
+                    <img id="pokeball" src="assets/pokeball.png" alt="Pokeball" class="w-20 h-20">
+                    Pokeball
+                </button></li>
+                <li> <button >
+                    <img id="honorball" src="./assets/honorball.png" alt="HonorBall" class="w-20 h-20">
+                    Honorball
+                </button></li>
+                <li> <button class="w-12 h-12 flex items-center justify-center">
+                    <img id="superball" src="./assets/superball.png" alt="SuperBall" class="w-20 h-20">
+                    Superball
+                </button></li>
+                <li><button class="w-12 h-12 flex items-center justify-center">
+                    <img id="hyperball" src="./assets/hyperball.png" alt="HyperBall" class="w-20 h-20">
+                    Hyperball
+                </button></li>
+                <li><button class="w-12 h-12 flex items-center justify-center">
+                    <img id="masterball" src="./assets/masterball.png" alt="MasterBall" class="w-20 h-20">
+                    Masterball
+                </button></li>
+            </ul>
+        </section>
+        <section class="shop bg-white rounded-lg shadow-md p-6"> 
+            <h1 class="titleShop text-2xl font-bold mb-4">Bonus</h1>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script> 
+    <script src="bonus.js"></script>
+</body>
+</html>
+
+----------------------------------------------
+<!--<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
