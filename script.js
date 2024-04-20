@@ -28,23 +28,7 @@ setInterval(() => {
     localStorage.setItem("alchemistSave", JSON.stringify({ essences, elements, bonuses }));
 }, 30000);
 
-function clickAlchemy() {
-    essences++;
-    updateDisplay();
-    // Ajoute la classe "shake" au bouton pour déclencher l'animation
-    document.getElementById("alchemyButton").classList.add("shake");
-    // Supprime la classe "shake" après un court délai pour arrêter l'animation
-    setTimeout(function() {
-        document.getElementById("alchemyButton").classList.remove("shake");
-    }, 500); // 500 ms correspond à la durée de l'animation définie dans le CSS
-}
-
-// Save state to localStorage every 30 seconds
-setInterval(() => {
-    localStorage.setItem("alchemistSave", JSON.stringify({ essences, elements, bonuses }));
-}, 30000);
-
-function vibrerImage() {
+function imgVibration() {
     // Sélectionnez l'image
     var image = document.querySelector("button img");
 
@@ -61,35 +45,35 @@ function vibrerImage() {
 let compteurClics = 0;
 
 // Fonction appelée lors du clic sur l'image
-function clicSurImage() {
+function clickOnImage() {
     // Incrémente le compteur de clics
     compteurClics++;
 
     // Si le compteur de clics atteint 10
     if (compteurClics % 10 === 0) {
         // Change l'image aléatoirement
-        changerImageAleatoire();
+        changeImageRandom();
     }
 }
 
 // Fonction pour changer l'image aléatoirement
-function changerImageAleatoire() {
+function changeImageRandom() {
     // Sélectionne l'image du buisson
     var image = document.getElementById("buisson");
 
     // Liste des chemins vers les images de buissons
-    var imagesBuisson = ["assets/hyperball.png", "assets/honorball.png", "assets/superball.png"];
+    var imagesClick = ["assets/roucoul.png", "assets/Osselait.png", "assets/Rondoudou.png", "assets/Carapuce.png", "assets/Carabaffe.png", "assets/salamèche.png", "assets/Reptincel.png", "assets/Dracaufeu.png"];
 
     // Génère un index aléatoire pour sélectionner une image aléatoire
-    var indexAleatoire = Math.floor(Math.random() * imagesBuisson.length);
+    var indexAleatoire = Math.floor(Math.random() * imagesClick.length);
 
     // Change le chemin de l'image pour l'image sélectionnée aléatoirement
-    image.src = imagesBuisson[indexAleatoire];
+    image.src = imagesClick[indexAleatoire];
 }
 
 // Attache l'événement clic à l'image du buisson
-var boutonBuisson = document.getElementById("buisson");
-boutonBuisson.addEventListener("click", clicSurImage);
+var boutonClick = document.getElementById("buisson");
+boutonClick.addEventListener("click", clickOnImage);
 
 // Initial display update
 updateDisplay();
