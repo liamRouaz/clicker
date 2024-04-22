@@ -125,6 +125,10 @@ li {
     cursor: pointer; 
 }
 
+#essenceDisplay{
+    font-family: "Honk", system-ui;
+}
+
 /* Définition de l'animation pour la vibration */
 @keyframes vibration {
     0% { transform: translateX(0); }
